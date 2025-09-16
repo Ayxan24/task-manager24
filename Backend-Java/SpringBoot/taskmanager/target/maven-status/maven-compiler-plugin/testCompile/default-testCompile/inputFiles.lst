@@ -1,0 +1,9 @@
+/home/ayna/CODES/ProjectTaskManager/Backend-Java/SpringBoot/taskmanager/src/test/java/com/example/taskmanager/TaskManagerApplicationTests.java
+/home/ayna/CODES/ProjectTaskManager/Backend-Java/SpringBoot/taskmanager/src/test/java/com/example/taskmanager/controller/GroupController.java
+/home/ayna/CODES/ProjectTaskManager/Backend-Java/SpringBoot/taskmanager/src/test/java/com/example/taskmanager/model/Date.java
+/home/ayna/CODES/ProjectTaskManager/Backend-Java/SpringBoot/taskmanager/src/test/java/com/example/taskmanager/model/IManager.java
+/home/ayna/CODES/ProjectTaskManager/Backend-Java/SpringBoot/taskmanager/src/test/java/com/example/taskmanager/model/ITask.java
+/home/ayna/CODES/ProjectTaskManager/Backend-Java/SpringBoot/taskmanager/src/test/java/com/example/taskmanager/model/ITaskGroup.java
+/home/ayna/CODES/ProjectTaskManager/Backend-Java/SpringBoot/taskmanager/src/test/java/com/example/taskmanager/model/Manager.java
+/home/ayna/CODES/ProjectTaskManager/Backend-Java/SpringBoot/taskmanager/src/test/java/com/example/taskmanager/model/Task.java
+/home/ayna/CODES/ProjectTaskManager/Backend-Java/SpringBoot/taskmanager/src/test/java/com/example/taskmanager/model/TaskGroup.java

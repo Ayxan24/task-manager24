@@ -1,0 +1,9 @@
+com/example/taskmanager/model/TaskGroup.class
+com/example/taskmanager/model/ITaskGroup.class
+com/example/taskmanager/model/Manager.class
+com/example/taskmanager/model/ITask.class
+com/example/taskmanager/model/IManager.class
+com/example/taskmanager/TaskManagerApplicationTests.class
+com/example/taskmanager/model/Date.class
+com/example/taskmanager/model/Task.class
+com/example/taskmanager/controller/GroupController.class

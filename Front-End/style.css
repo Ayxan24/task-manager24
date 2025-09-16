@@ -1,0 +1,23 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+.group {
+    background: #f0f0f0;
+    padding: 10px;
+    width: 200px;
+    border-radius: 8px;
+}
+.group h2 {
+    text-align: center;
+}
+.task {
+    background: white;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: grab;
+}
