@@ -20,13 +20,20 @@ public interface ITaskGroup {
      */
     void addTask(Task task);
 
+    
+
+
+
+    void addTaskTo(Task task, int index);
+
+
     /**
      * Gets the task at the specified index.
      * @param index the index of the task
-     * @return the ITask at the given index
+     * @return the Task at the given index
      * @throws IndexOutOfBoundsException if the index is invalid
      */
-    ITask getTask(int index) throws IndexOutOfBoundsException;
+    Task getTask(int index) throws IndexOutOfBoundsException;
 
     /**
      * Removes the task at the specified index.
@@ -39,9 +46,9 @@ public interface ITaskGroup {
      * Removes and returns the task at the specified index.
      * If the index is invalid, implementation will throw an exception.
      * @param index the index of the task to pop
-     * @return the removed ITask
+     * @return the removed Task
      */
-    ITask popTask(int index) throws IndexOutOfBoundsException;
+    Task popTask(int index) throws IndexOutOfBoundsException;
 
 
     /**

@@ -1,0 +1,50 @@
+{
+  "managerName" : "Default Manager",
+  "allTaskGroups" : [ {
+    "groupName" : "Group 1",
+    "tasksList" : [ {
+      "title" : "title",
+      "description" : "descripton",
+      "dueDate" : {
+        "day" : 1,
+        "month" : 2,
+        "year" : 1233
+      },
+      "priority" : 1,
+      "completed" : false
+    }, {
+      "title" : "title2",
+      "description" : "descripton2",
+      "dueDate" : {
+        "day" : 1,
+        "month" : 2,
+        "year" : 1233
+      },
+      "priority" : 2,
+      "completed" : true
+    }, {
+      "title" : "title3",
+      "description" : "descripton3",
+      "dueDate" : {
+        "day" : 1,
+        "month" : 2,
+        "year" : 1233
+      },
+      "priority" : 3,
+      "completed" : false
+    } ]
+  }, {
+    "groupName" : "Group 2",
+    "tasksList" : [ {
+      "title" : "title4",
+      "description" : "descripton4",
+      "dueDate" : {
+        "day" : 1,
+        "month" : 2,
+        "year" : 1233
+      },
+      "priority" : 4,
+      "completed" : true
+    } ]
+  } ]
+}

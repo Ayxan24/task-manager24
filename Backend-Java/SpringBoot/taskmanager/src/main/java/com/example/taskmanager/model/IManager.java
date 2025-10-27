@@ -13,6 +13,7 @@ public interface IManager {
      */
     void addTaskGroup(TaskGroup taskGroup);
 
+    void addTaskGroupTo(TaskGroup taskGroup, int index);
     
     /**
      * Retrieves all TaskGroups managed.
@@ -35,7 +36,7 @@ public interface IManager {
      * @param index the index of the TaskGroup to pop
      * @return the removed TaskGroup
      */
-    ITaskGroup popTaskGroup(int index) throws IndexOutOfBoundsException;
+    TaskGroup popTaskGroup(int index) throws IndexOutOfBoundsException;
 
     /**
      * Gets the TaskGroup at the specified index.
@@ -43,7 +44,7 @@ public interface IManager {
      * @return the TaskGroup at the given index
      * @throws IndexOutOfBoundsException if the index is invalid
      */
-    ITaskGroup getTaskGroup(int index) throws IndexOutOfBoundsException;
+    TaskGroup getTaskGroup(int index) throws IndexOutOfBoundsException;
 
     /**
      * Returns the number of TaskGroups managed.

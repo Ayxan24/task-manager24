@@ -29,12 +29,23 @@ public class TaskGroup implements ITaskGroup {
     public void addTask(Task task){
         group.add(task) ;
     }
+
+    @Override
+    public void addTaskTo(Task task, int index){
+        if (index < 0 || index > group.size()) {
+            group.add(task); // Add to the end if index is invalid
+        } else {
+            group.add(index, task);
+        }
+    }
+
+
     @SuppressWarnings("unused")
     private List<Task> getGroup(){ // This sould not be used
         return group ;
     }
     @Override
-    public ITask getTask(int index) throws IndexOutOfBoundsException {
+    public Task getTask(int index) throws IndexOutOfBoundsException {
         if (index < 0 || index >= group.size()) {
             throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + group.size());
         }
@@ -50,7 +61,7 @@ public class TaskGroup implements ITaskGroup {
         }
     }
     @Override
-    public ITask popTask(int index) throws IndexOutOfBoundsException {
+    public Task popTask(int index) throws IndexOutOfBoundsException {
         if (index < 0 || index >= group.size()) {
             throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + group.size());
         }

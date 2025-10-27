@@ -1,36 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Task Manager</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="group" id="group1">
-    <h2>Group 1</h2>
-    <div class="task">Task 1</div>
-    <div class="task">Task 2</div>
+  <div class="header">
+    <h1>Task Manager</h1>
+    <button id="save-btn" class="save-button">Save</button>
   </div>
-
-  <div class="group" id="group2">
-    <h2>Group 2</h2>
-    <div class="task">Task 3</div>
-    <div class="task">Task 4</div>
+  
+  <div class="toolbar">
+    <button id="add-group-btn" class="add-group-button">+ Add Group</button>
   </div>
-
-  <div class="output" id="output">
-    <h2>Output1</h2>
-    <div class="log" id="log"> log</div>  
-  </div>
-
-  <div class="buttons">
-    <button id="add-group">Add Group</button>
-  </div>
-
-
-
-
-  <!-- Load app.js as a module -->
+  
+  <div id="groups-container"></div>
+  
+  <!-- load our JS -->
   <script type="module" src="app.js"></script>
 </body>
 </html>

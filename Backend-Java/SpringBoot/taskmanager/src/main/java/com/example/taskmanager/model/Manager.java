@@ -2,6 +2,7 @@ package com.example.taskmanager.model;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 public class Manager implements IManager {
     private List<TaskGroup> taskGroups;
@@ -16,6 +17,17 @@ public class Manager implements IManager {
     public void addTaskGroup(TaskGroup taskGroup) {
         taskGroups.add(taskGroup);
     }
+
+    @Override
+    public void addTaskGroupTo(TaskGroup taskGroup, int index){
+        if (index < 0 || index > taskGroups.size()) {
+            taskGroups.add(taskGroup); // Add to the end if index is invalid
+        } else {
+            taskGroups.add(index, taskGroup);
+        }
+    }
+
+
     // ROUNDING ALERT NO EXEPTION
     @Override
     public void removeTaskGroup(int index) {
@@ -29,7 +41,7 @@ public class Manager implements IManager {
     }
 
     @Override
-    public ITaskGroup popTaskGroup(int index) throws IndexOutOfBoundsException {
+    public TaskGroup popTaskGroup(int index) throws IndexOutOfBoundsException {
         if (index < 0 || index >= taskGroups.size()) {
             throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + taskGroups.size());
         }
@@ -37,14 +49,16 @@ public class Manager implements IManager {
     }
 
     @Override
-    public ITaskGroup getTaskGroup(int index) throws IndexOutOfBoundsException {
+    public TaskGroup getTaskGroup(int index) throws IndexOutOfBoundsException {
         if (index < 0 || index >= taskGroups.size()) {
             throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + taskGroups.size());
         }
         return taskGroups.get(index);
     }
 
+    
     @Override
+    @JsonIgnore
     public int getNumberOfTaskGroups() {
         return taskGroups.size();
     }
